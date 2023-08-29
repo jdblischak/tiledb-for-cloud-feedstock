@@ -1,1 +1,8 @@
-{}
+azure:
+  store_build_artifacts: True
+  upload_packages: False
+conda_forge_output_validation: False
+github:
+  user_or_org: TileDB-Inc
+provider:
+  linux_64: azure

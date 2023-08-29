@@ -9,23 +9,20 @@ package:
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
   sha256: bfa06f71dfe9ef4de4abae55712213ef146326c8e9b56cddcdb73d3c503f0c63
-  patches:
-    - 0001-LibXML2-needs-to-be-linked-after-Azure-libraries.patch
 
 build:
-  number: 1
+  number: 0
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', min_pin='x.x', max_pin='x.x') }}
-  skip: true  # [win and vc<14]
+  skip: true  # [not linux]
 
 requirements:
   build:
-    - make  # [unix]
+    - make
     - cmake
-    - pkg-config  # [not win]
+    - pkg-config
     - {{ compiler('cxx') }}
-    - file  # [arm64]
   host:
     - bzip2
     - curl
@@ -34,27 +31,16 @@ requirements:
     - openssl
     - zlib
     - zstd
-    # see: https://github.com/conda-forge/google-cloud-cpp-feedstock/pull/108,
-    - libcrc32c  # [gcs == 'gcs_enabled' and win]
-    - libcurl    # [gcs == 'gcs_enabled' and win]
     - libxml2
 test:
   requires:
     - {{ compiler('cxx') }}
     - cmake
-    - make  # [unix]
-  #  downstreams:
-  #  - tiledb-py
+    - make
   commands:
-    - test -e $PREFIX/include/tiledb/tiledb.h  # [not win]
-    - test -e $PREFIX/include/tiledb/tiledb  # [not win]
-    - test -e $PREFIX/lib/libtiledb$SHLIB_EXT  # [not win]
-
-    - if exist %LIBRARY_INC%\\tiledb\\tiledb (exit 0) else (exit 1)  # [win]
-    - if exist %LIBRARY_INC%\\tiledb\\tiledb.h (exit 0) else (exit 1)  # [win]
-    - if exist %LIBRARY_LIB%\\tiledb.lib (exit 0) else (exit 1)  # [win]
-    - if exist %LIBRARY_LIB%\\cmake\\TileDB\\TileDBConfig.cmake (exit 0) else (exit 1)  # [win]
-    - if exist %PREFIX%\\Library\\bin\\tiledb.dll (exit 0) else (exit 1)  # [win]
+    - test -e $PREFIX/include/tiledb/tiledb.h
+    - test -e $PREFIX/include/tiledb/tiledb
+    - test -e $PREFIX/lib/libtiledb$SHLIB_EXT
 
 about:
   home: http://tiledb.io
@@ -72,8 +58,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - akrherz
     - shelnutt2
     - ihnorton
-    - nguyenv
-    - xylar
+    - jdblischak
