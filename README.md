@@ -1,7 +1,7 @@
 About tiledb-feedstock
 ======================
 
-Feedstock license: [BSD-3-Clause](https://github.com/TileDB-Inc/tiledb-for-cloud-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/jdblischak/tiledb-for-cloud-feedstock/blob/main/LICENSE.txt)
 
 Home: http://tiledb.io
 
@@ -30,8 +30,8 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/TileDB-Inc/feedstock-builds/_build/latest?definitionId=&branchName=main">
-            <img src="https://dev.azure.com/TileDB-Inc/feedstock-builds/_apis/build/status/tiledb-for-cloud-feedstock?branchName=main">
+          <a href="https://dev.azure.com/jdblischak/feedstock-builds/_build/latest?definitionId=15&branchName=main">
+            <img src="https://dev.azure.com/jdblischak/feedstock-builds/_apis/build/status/tiledb-for-cloud-feedstock?branchName=main">
           </a>
         </summary>
         <table>
@@ -39,8 +39,8 @@ Current build status
           <tbody><tr>
               <td>linux_64</td>
               <td>
-                <a href="https://dev.azure.com/TileDB-Inc/feedstock-builds/_build/latest?definitionId=&branchName=main">
-                  <img src="https://dev.azure.com/TileDB-Inc/feedstock-builds/_apis/build/status/tiledb-for-cloud-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
+                <a href="https://dev.azure.com/jdblischak/feedstock-builds/_build/latest?definitionId=15&branchName=main">
+                  <img src="https://dev.azure.com/jdblischak/feedstock-builds/_apis/build/status/tiledb-for-cloud-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
                 </a>
               </td>
             </tr>
@@ -157,7 +157,7 @@ opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the TileDB-Inc/tiledb-feedstock are
+Note that all branches in the jdblischak/tiledb-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.

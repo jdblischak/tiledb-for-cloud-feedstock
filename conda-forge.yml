@@ -1,8 +1,12 @@
 azure:
   store_build_artifacts: True
   upload_packages: False
+  build_id: 15
+  user_or_org: jdblischak
+  project_name: feedstock-builds
 conda_forge_output_validation: False
 github:
-  user_or_org: TileDB-Inc
+  user_or_org: jdblischak
+  repo_name: tiledb-for-cloud-feedstock
 provider:
   linux_64: azure
