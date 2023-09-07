@@ -4,6 +4,11 @@ azure:
   build_id: 15
   user_or_org: jdblischak
   project_name: feedstock-builds
+channels:
+  sources:
+    - conda-forge
+  targets:
+    - ["jdblischak", "for-cloud"]
 conda_forge_output_validation: False
 github:
   user_or_org: jdblischak

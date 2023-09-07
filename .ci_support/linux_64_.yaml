@@ -5,7 +5,7 @@ cdt_name:
 channel_sources:
 - conda-forge
 channel_targets:
-- tiledb for-cloud
+- jdblischak for-cloud
 curl:
 - '8'
 cxx_compiler:
@@ -15,7 +15,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 libxml2:
-- '2.10'
+- '2.11'
 lz4_c:
 - 1.9.3
 openssl:
