@@ -1,6 +1,6 @@
 azure:
   store_build_artifacts: True
-  upload_packages: False
+  upload_packages: True
   build_id: 15
   user_or_org: jdblischak
   project_name: feedstock-builds
