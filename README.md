@@ -1,7 +1,7 @@
 About tiledb-feedstock
 ======================
 
-Feedstock license: [BSD-3-Clause](https://github.com/jdblischak/tiledb-for-cloud-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/TileDB-Inc/tiledb-for-cloud-feedstock/blob/main/LICENSE.txt)
 
 Home: http://tiledb.io
 
@@ -30,8 +30,8 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/jdblischak/feedstock-builds/_build/latest?definitionId=15&branchName=main">
-            <img src="https://dev.azure.com/jdblischak/feedstock-builds/_apis/build/status/tiledb-for-cloud-feedstock?branchName=main">
+          <a href="https://dev.azure.com/TileDB-Inc/CI/_build/latest?definitionId=&branchName=main">
+            <img src="https://dev.azure.com/TileDB-Inc/CI/_apis/build/status/tiledb-for-cloud-feedstock?branchName=main">
           </a>
         </summary>
         <table>
@@ -39,8 +39,8 @@ Current build status
           <tbody><tr>
               <td>linux_64</td>
               <td>
-                <a href="https://dev.azure.com/jdblischak/feedstock-builds/_build/latest?definitionId=15&branchName=main">
-                  <img src="https://dev.azure.com/jdblischak/feedstock-builds/_apis/build/status/tiledb-for-cloud-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
+                <a href="https://dev.azure.com/TileDB-Inc/CI/_build/latest?definitionId=&branchName=main">
+                  <img src="https://dev.azure.com/TileDB-Inc/CI/_apis/build/status/tiledb-for-cloud-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
                 </a>
               </td>
             </tr>
@@ -56,19 +56,19 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-tiledb-green.svg)](https://anaconda.org/jdblischak/tiledb) | [![Conda Downloads](https://img.shields.io/conda/dn/jdblischak/tiledb.svg)](https://anaconda.org/jdblischak/tiledb) | [![Conda Version](https://img.shields.io/conda/vn/jdblischak/tiledb.svg)](https://anaconda.org/jdblischak/tiledb) | [![Conda Platforms](https://img.shields.io/conda/pn/jdblischak/tiledb.svg)](https://anaconda.org/jdblischak/tiledb) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-tiledb-green.svg)](https://anaconda.org/tiledb/tiledb) | [![Conda Downloads](https://img.shields.io/conda/dn/tiledb/tiledb.svg)](https://anaconda.org/tiledb/tiledb) | [![Conda Version](https://img.shields.io/conda/vn/tiledb/tiledb.svg)](https://anaconda.org/tiledb/tiledb) | [![Conda Platforms](https://img.shields.io/conda/pn/tiledb/tiledb.svg)](https://anaconda.org/tiledb/tiledb) |
 
 Installing tiledb
 =================
 
-Installing `tiledb` from the `jdblischak` channel can be achieved by adding `jdblischak` to your channels with:
+Installing `tiledb` from the `tiledb` channel can be achieved by adding `tiledb` to your channels with:
 
 ```
-conda config --add channels jdblischak
+conda config --add channels tiledb
 conda config --set channel_priority strict
 ```
 
-Once the `jdblischak` channel has been enabled, `tiledb` can be installed with `conda`:
+Once the `tiledb` channel has been enabled, `tiledb` can be installed with `conda`:
 
 ```
 conda install tiledb
@@ -83,26 +83,26 @@ mamba install tiledb
 It is possible to list all of the versions of `tiledb` available on your platform with `conda`:
 
 ```
-conda search tiledb --channel jdblischak
+conda search tiledb --channel tiledb
 ```
 
 or with `mamba`:
 
 ```
-mamba search tiledb --channel jdblischak
+mamba search tiledb --channel tiledb
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search tiledb --channel jdblischak
+mamba repoquery search tiledb --channel tiledb
 
 # List packages depending on `tiledb`:
-mamba repoquery whoneeds tiledb --channel jdblischak
+mamba repoquery whoneeds tiledb --channel tiledb
 
 # List dependencies of `tiledb`:
-mamba repoquery depends tiledb --channel jdblischak
+mamba repoquery depends tiledb --channel tiledb
 ```
 
 
@@ -116,9 +116,9 @@ package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
-`jdblischak` channel, whereupon the built conda packages will be available for
-everybody to install and use from the `jdblischak` channel.
-Note that all branches in the jdblischak/tiledb-feedstock are
+`tiledb` channel, whereupon the built conda packages will be available for
+everybody to install and use from the `tiledb` channel.
+Note that all branches in the TileDB-Inc/tiledb-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
