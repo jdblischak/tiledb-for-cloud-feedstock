@@ -1,14 +1,13 @@
 {% set name = "TileDB" %}
-{% set version = "2.16.3" %}
-{% set commit = "194b5ae" %}
-{% set sha256 = "05052f8435aa3335f780787e2a52d38c7518ee4f8f0d5f6347df3bbb054e1cbb" %}
+{% set version = "2.17.0" %}
+{% set commit = "93c173d" %}
+{% set sha256 = "065e4a335813d9e6c3e3d80b4073965953bf84dd04cb2aef6c7ce1e8667ba575" %}
 
 package:
   name: tiledb
   version: {{ version }}
 
 source:
-  url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
   url: https://github.com/TileDB-Inc/{{ name }}/releases/download/{{ version }}/tiledb-linux-x86_64-{{ version }}-{{ commit }}.tar.gz
   sha256: {{ sha256 }}
 
@@ -20,11 +19,6 @@ build:
   skip: true  # [not linux]
 
 requirements:
-  build:
-    - make
-    - cmake
-    - pkg-config
-    - {{ compiler('cxx') }}
   host:
     - bzip2
     - curl
