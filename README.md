@@ -1,7 +1,7 @@
 About tiledb-feedstock
 ======================
 
-Feedstock license: [BSD-3-Clause](https://github.com/TileDB-Inc/tiledb-for-cloud-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/TileDB-Inc/tiledb-feedstock-for-cloud/blob/main/LICENSE.txt)
 
 Home: http://tiledb.io
 
@@ -30,8 +30,8 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/TileDB-Inc/CI/_build/latest?definitionId=&branchName=main">
-            <img src="https://dev.azure.com/TileDB-Inc/CI/_apis/build/status/tiledb-for-cloud-feedstock?branchName=main">
+          <a href="https://dev.azure.com/TileDB-Inc/CI/_build/latest?definitionId=51&branchName=main">
+            <img src="https://dev.azure.com/TileDB-Inc/CI/_apis/build/status/tiledb-feedstock-for-cloud?branchName=main">
           </a>
         </summary>
         <table>
@@ -39,8 +39,8 @@ Current build status
           <tbody><tr>
               <td>linux_64</td>
               <td>
-                <a href="https://dev.azure.com/TileDB-Inc/CI/_build/latest?definitionId=&branchName=main">
-                  <img src="https://dev.azure.com/TileDB-Inc/CI/_apis/build/status/tiledb-for-cloud-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
+                <a href="https://dev.azure.com/TileDB-Inc/CI/_build/latest?definitionId=51&branchName=main">
+                  <img src="https://dev.azure.com/TileDB-Inc/CI/_apis/build/status/tiledb-feedstock-for-cloud?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
                 </a>
               </td>
             </tr>

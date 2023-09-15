@@ -1,8 +1,7 @@
 azure:
   store_build_artifacts: True
   upload_packages: True
-  # will need to be updated once Azure builds are enabled
-  # build_id: 15
+  build_id: 51
   user_or_org: TileDB-Inc
   project_name: CI
 channels:
@@ -13,6 +12,6 @@ channels:
 conda_forge_output_validation: False
 github:
   user_or_org: TileDB-Inc
-  repo_name: tiledb-for-cloud-feedstock
+  repo_name: tiledb-feedstock-for-cloud
 provider:
   linux_64: azure
