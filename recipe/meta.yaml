@@ -1,7 +1,7 @@
 {% set name = "TileDB" %}
-{% set version = "2.17.4" %}
-{% set commit = "a1f648e" %}
-{% set sha256 = "5070b3477a7fe07d5f7815e5f2ff3d683db59aeb6b7df1428616dafb8d9ff306" %}
+{% set version = "2.18.2" %}
+{% set commit = "9ae6e1a" %}
+{% set sha256 = "abbe462ba6ab7c0ddb51fda6638eb0ab59cc07010c53f7da321a200d8acd9b0c" %}
 
 package:
   name: tiledb
