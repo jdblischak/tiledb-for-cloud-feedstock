@@ -61,14 +61,14 @@ Current release info
 Installing tiledb
 =================
 
-Installing `tiledb` from the `tiledb` channel can be achieved by adding `tiledb` to your channels with:
+Installing `tiledb` from the `tiledb/label/for-cloud` channel can be achieved by adding `tiledb/label/for-cloud` to your channels with:
 
 ```
-conda config --add channels tiledb
+conda config --add channels tiledb/label/for-cloud
 conda config --set channel_priority strict
 ```
 
-Once the `tiledb` channel has been enabled, `tiledb` can be installed with `conda`:
+Once the `tiledb/label/for-cloud` channel has been enabled, `tiledb` can be installed with `conda`:
 
 ```
 conda install tiledb
@@ -83,26 +83,26 @@ mamba install tiledb
 It is possible to list all of the versions of `tiledb` available on your platform with `conda`:
 
 ```
-conda search tiledb --channel tiledb
+conda search tiledb --channel tiledb/label/for-cloud
 ```
 
 or with `mamba`:
 
 ```
-mamba search tiledb --channel tiledb
+mamba search tiledb --channel tiledb/label/for-cloud
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search tiledb --channel tiledb
+mamba repoquery search tiledb --channel tiledb/label/for-cloud
 
 # List packages depending on `tiledb`:
-mamba repoquery whoneeds tiledb --channel tiledb
+mamba repoquery whoneeds tiledb --channel tiledb/label/for-cloud
 
 # List dependencies of `tiledb`:
-mamba repoquery depends tiledb --channel tiledb
+mamba repoquery depends tiledb --channel tiledb/label/for-cloud
 ```
 
 
