@@ -1,18 +1,20 @@
 {% set name = "TileDB" %}
 {% set version = "2.18.2" %}
-{% set commit = "9ae6e1a" %}
-{% set sha256 = "abbe462ba6ab7c0ddb51fda6638eb0ab59cc07010c53f7da321a200d8acd9b0c" %}
+{% set pkg_version = "cloud-2.18-awssdk-1.8.2" %}
+{% set commit = "82cd615" %}
+{% set sha256 = "86f0c3e15bb1a0091b9f4ebac3aa28a91af9ac3306a04601ccb6aa041c08857b" %}
 
 package:
   name: tiledb
   version: {{ version }}
 
 source:
-  url: https://github.com/TileDB-Inc/{{ name }}/releases/download/{{ version }}/tiledb-linux-x86_64-{{ version }}-{{ commit }}.tar.gz
+  # HEY! RESET TO TileDB-Inc
+  url: https://github.com/ihnorton/{{ name }}/releases/download/{{ pkg_version }}/tiledb-linux-x86_64-noavx2-{{ pkg_version }}-{{ commit }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', min_pin='x.x', max_pin='x.x') }}
